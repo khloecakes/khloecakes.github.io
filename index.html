@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khloe Cakes and Confectionery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Khloe Cakes and Confectionery</h1>
+        <p>Delicious Cakes, Pastries, Money Bouquets & More!</p>
+        <a href="https://wa.me/2347049070020" target="_blank">Order on WhatsApp</a>
+    </section>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Hi! Welcome to Khloe Cakes and Confectionery. We create fresh, homemade cakes, pastries, bread rolls, money bouquets, food trays, and continental dishes. We serve with love, and every order is crafted to make your celebration special!</p>
+        </section>
+
+       <section class="services">
+    <h2 class="services-title">Our Services</h2>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🎂</div>
+            <h3>Cakes of All Kinds</h3>
+            <p>Birthday, wedding, kids’ cakes and more. Custom designs available.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🥐</div>
+            <h3>Pastries & Bread Rolls</h3>
+            <p>Freshly baked pastries and soft bread rolls, perfect for any occasion.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💸</div>
+            <h3>Money Bouquets & Towers</h3>
+            <p>Unique and creative money bouquets and towers for special celebrations.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3>Food Trays & Continental Dishes</h3>
+            <p>Delicious platters and continental dishes for events and parties.</p>
+        </div>
+    </div>
+</section>
+
+       <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Gallery</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="cake-2.jpg" alt="Cake">
+            </div>
+            <div class="gallery-item">
+            <img src="cupcakes.jpg" alt="Pastry">
+        </div>
+        <div class="gallery-item">
+            <img src="bread.jpg" alt="Bread Rolls">
+        </div>
+        <div class="gallery-item">
+            <img src="money.jpg" alt="Money Bouquet">
+        </div>
+    </div>
+</section>
+
+
+        <!-- Order Section -->
+        <section class="order">
+            <h2>Place Your Order</h2>
+            <p>We deliver to your doorstep or you can pick up your order.</p>
+            <br>
+            <a href="https://wa.me/2347049070020" target="_blank">Book via WhatsApp</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+   <footer>
+    <p>&copy; 2026 Khloe Cakes and Confectionery. Made with ❤️</p>
+    <p>📍 Uyo, Akwa Ibom State.</p>
+    <p>Follow us on Instagram & WhatsApp</p>
+</footer>
+
+<script>
+    const cards = document.querySelectorAll('.service-card');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+</script>
+
+</body>
+</html>
